@@ -1,0 +1,6 @@
+project: savantenvs/toml-rs
+target: fuzz_from_to_string
+
+cmds:
+  - cmd: /mayhem/fuzz_from_to_string
+    libfuzzer: true
