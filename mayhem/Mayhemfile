@@ -1,0 +1,10 @@
+project: savantenvs/toml-rs
+target: fuzz_from_to_string-buggy-mhh-run-24
+
+cmds:
+  - cmd: /mayhem/fuzz_from_to_string
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_from_to_string-buggy-mhh-run-24/testsuite
